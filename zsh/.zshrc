@@ -20,7 +20,6 @@ alias grep='grep --color=auto'
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 alias sudo='sudo '
 alias vim='nvim'
-alias code='vscodium'
 alias lg='lazygit'
 alias fly='/home/kenneth/.fly/bin/flyctl'
 
@@ -30,6 +29,7 @@ export MANPAGER='nvim +Man!'
 export VISUAL=nvim
 export FZF_DEFAULT_OPTS=" \
 --height 50% --border --reverse"
+export EDITOR=nvim
 
 bindkey -s ^f "tmux-sessionizer\n"
 

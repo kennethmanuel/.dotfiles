@@ -1,15 +1,15 @@
 #!/bin/sh
 
 if [ "$(cat ~/.tw_started_id)" == "" ]; then
-	printf ""
+	echo ""
 else
 	project=$(task _get "$(cat ~/.tw_started_id)".project)
 	description=$(task _get "$(cat ~/.tw_started_id)".description)
 
 	if timew >/dev/null 2>&1; then
-		printf "    $(timew summary :day "$project" "$description" | awk '{print $NF}' | tail -2 | head -1)"
+		echo "$(timew summary :day "$project" "$description" | awk '{print $NF}' | tail -2 | head -1)"
 	else
-		printf ""
+		echo ""
 	fi
 
 	if [ "${1}" = "--toggle" ]; then
