@@ -25,6 +25,7 @@ alias fly='/home/kenneth/.fly/bin/flyctl'
 
 export PATH=$PATH:~/.config/tmux/bin
 export PATH=$PATH:~/.local/bin
+export PATH=$PATH:~/bin
 export MANPAGER='nvim +Man!'
 export VISUAL=nvim
 export FZF_DEFAULT_OPTS=" \
